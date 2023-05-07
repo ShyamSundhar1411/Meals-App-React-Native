@@ -8,13 +8,14 @@ import {
   Platform,
   StatusBar,
 } from "react-native";
+import { SearchBarComponent } from "./src/components/Search";
 
 export default function App() {
   return (
     <>
       <SafeAreaView style={styles.androidSafeArea}>
         <View style={styles.searchBox}>
-          <Text>Search</Text>
+          <SearchBarComponent />
         </View>
         <View style={styles.listBox}>
           <Text>List</Text>
@@ -30,8 +31,7 @@ const styles = StyleSheet.create({
     marginTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
   searchBox: {
-    backgroundColor: "green",
-    padding: 10,
+    padding: 16,
   },
   listBox: {
     backgroundColor: "blue",
