@@ -1,5 +1,6 @@
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import React from "react";
+import styled from "styled-components/native";
 import {
   StyleSheet,
   Text,
@@ -10,16 +11,25 @@ import {
 } from "react-native";
 import { SearchBarComponent } from "../../../components/Search";
 import { RestaurantInfo } from "../components/restaurant-info";
+
+const SearchBoxContainer = styled.View`
+  padding: 10px;
+`;
+
+const RestaurantListContainer = styled.View`
+  flex: 1;
+  padding: 10px;
+`;
 export const RestaurantScreen = () => {
   return (
     <>
       <SafeAreaView style={styles.androidSafeArea}>
-        <View style={styles.searchBox}>
+        <SearchBoxContainer>
           <SearchBarComponent />
-        </View>
-        <View style={styles.listBox}>
+        </SearchBoxContainer>
+        <RestaurantListContainer>
           <RestaurantInfo />
-        </View>
+        </RestaurantListContainer>
       </SafeAreaView>
     </>
   );
@@ -28,13 +38,5 @@ const styles = StyleSheet.create({
   androidSafeArea: {
     flex: 1,
     marginTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-  },
-  searchBox: {
-    padding: 16,
-  },
-  listBox: {
-    backgroundColor: "blue",
-    padding: 10,
-    flex: 1,
   },
 });
