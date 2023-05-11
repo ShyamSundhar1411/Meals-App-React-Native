@@ -6,6 +6,7 @@ import { Card } from "react-native-paper";
 const Title = styled.Text`
   padding: ${(props) => props.theme.space[3]};
   font-weight: bold;
+  font-family: ${(props) => props.theme.fonts.heading};
   color: ${(props) => props.theme.colors.ui.primary};
 `;
 const RestaurantCard = styled(Card)`
