@@ -13,12 +13,12 @@ import { SearchBarComponent } from "../../../components/Search";
 import { RestaurantInfo } from "../components/restaurant-info";
 
 const SearchBoxContainer = styled.View`
-  padding: 10px;
+  padding: ${(props) => props.theme.space[2]};
 `;
 
 const RestaurantListContainer = styled.View`
   flex: 1;
-  padding: 10px;
+  padding: ${(props) => props.theme.space[2]};
 `;
 export const RestaurantScreen = () => {
   return (
