@@ -13,7 +13,7 @@ import { SearchBarComponent } from "../../../components/Search";
 import { RestaurantInfo } from "../components/restaurant-info";
 
 const SearchBoxContainer = styled.View`
-  padding: ${(props) => props.theme.space[2]};
+  padding: ${(props) => props.theme.space[3]};
 `;
 
 const RestaurantListContainer = styled.View`
