@@ -1,10 +1,9 @@
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components/native";
 import {
   StyleSheet,
-  Text,
-  View,
+  FlatList,
   SafeAreaView,
   Platform,
   StatusBar,
@@ -16,10 +15,6 @@ const SearchBoxContainer = styled.View`
   padding: ${(props) => props.theme.space[3]};
 `;
 
-const RestaurantListContainer = styled.View`
-  flex: 1;
-  padding: ${(props) => props.theme.space[2]};
-`;
 export const RestaurantScreen = () => {
   return (
     <>
@@ -27,9 +22,11 @@ export const RestaurantScreen = () => {
         <SearchBoxContainer>
           <SearchBarComponent />
         </SearchBoxContainer>
-        <RestaurantListContainer>
-          <RestaurantInfo />
-        </RestaurantListContainer>
+        <FlatList
+          data={[{ name: 1 }, { name: 2 }, { name: 3 }, { name: 4 }]}
+          renderItem={() => <RestaurantInfo />}
+          keyExtractor={(item) => item.name}
+        />
       </SafeAreaView>
     </>
   );
