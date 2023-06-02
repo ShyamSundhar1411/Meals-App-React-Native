@@ -1,5 +1,5 @@
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import styled from "styled-components/native";
 import {
   StyleSheet,
@@ -10,12 +10,14 @@ import {
 } from "react-native";
 import { SearchBarComponent } from "../../../components/Search";
 import { RestaurantInfo } from "../components/restaurant-info";
+import { RestaurantsContext } from "../../../services/restaurants/restaurant.context";
 
 const SearchBoxContainer = styled.View`
-  padding: ${(props) => props.theme.space[3]};
+  padding: ${(props) => props.theme.space[2]};
 `;
 
 export const RestaurantScreen = () => {
+  const restaurantContext = useContext(RestaurantsContext);
   return (
     <>
       <SafeAreaView style={styles.androidSafeArea}>
@@ -23,7 +25,7 @@ export const RestaurantScreen = () => {
           <SearchBarComponent />
         </SearchBoxContainer>
         <FlatList
-          data={[{ name: 1 }, { name: 2 }, { name: 3 }, { name: 4 }]}
+          data={restaurantContext.restaurants}
           renderItem={() => <RestaurantInfo />}
           keyExtractor={(item) => item.name}
         />
