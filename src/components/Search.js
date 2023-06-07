@@ -1,17 +1,21 @@
-import React, { useState, useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Searchbar } from "react-native-paper";
+
 import { LocationContext } from "../services/location/location.context";
+
 export const SearchBarComponent = () => {
   const { keyword, search } = useContext(LocationContext);
-  const [searchQuery, setQueryState] = useState(keyword);
-  const onChangeQuery = (query) => setQueryState(query);
+  const [searchKeyword, setSearchKeyword] = useState(keyword);
+
   return (
     <Searchbar
-      placeholder="Search"
-      onChange={onChangeQuery}
-      value={searchQuery}
+      placeholder="Search for a location"
+      value={searchKeyword}
       onSubmitEditing={() => {
-        search(searchQuery);
+        search(searchKeyword);
+      }}
+      onChangeText={(text) => {
+        setSearchKeyword(text);
       }}
     />
   );

@@ -1,11 +1,12 @@
-import React, { useState, useEffect, createContext } from "react";
+import React, { useState, useEffect } from "react";
+
 import { locationRequest, locationTransform } from "./location._service";
 
-export const LocationContext = createContext();
+export const LocationContext = React.createContext();
 
 export const LocationContextProvider = ({ children }) => {
-  const [keyword, setKeyword] = useState("San Fransico");
-  const [location, setLocation] = useState("");
+  const [keyword, setKeyword] = useState("San Francisco");
+  const [location, setLocation] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -13,26 +14,32 @@ export const LocationContextProvider = ({ children }) => {
     setIsLoading(true);
     setKeyword(searchKeyword);
     if (!searchKeyword.length) {
+      // don't do anything
       return;
     }
-    locationRequest(keyword)
+    locationRequest(searchKeyword.toLowerCase())
       .then(locationTransform)
       .then((result) => {
         setIsLoading(false);
         setLocation(result);
+        console.log(result);
       })
       .catch((err) => {
         setIsLoading(false);
         setError(err);
+        console.log(err);
       });
   };
-  useEffect(() => {
-    onSearch(keyword);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+
   return (
     <LocationContext.Provider
-      value={{ isLoading, error, location, search: () => null, keyword }}
+      value={{
+        isLoading,
+        error,
+        location,
+        search: onSearch,
+        keyword,
+      }}
     >
       {children}
     </LocationContext.Provider>
