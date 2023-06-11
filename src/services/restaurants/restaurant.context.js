@@ -14,7 +14,6 @@ export const RestaurantsContextProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const { location } = useContext(LocationContext);
-  console.log(location);
   const retrieveRestaurants = (loc) => {
     setIsLoading(true);
     setRestaurants([]);
@@ -22,7 +21,7 @@ export const RestaurantsContextProvider = ({ children }) => {
       restaurantRequest(loc)
         .then(restaurantsTransform)
         .then((results) => {
-          console.log(results);
+          setIsLoading(false);
           setRestaurants(results);
         })
         .catch((err) => {
@@ -37,7 +36,7 @@ export const RestaurantsContextProvider = ({ children }) => {
       retrieveRestaurants(locationString);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [location]);
 
   return (
     <RestaurantsContext.Provider

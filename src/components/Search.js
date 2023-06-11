@@ -6,7 +6,6 @@ import { LocationContext } from "../services/location/location.context";
 export const SearchBarComponent = () => {
   const { keyword, search } = useContext(LocationContext);
   const [searchKeyword, setSearchKeyword] = useState(keyword);
-
   return (
     <Searchbar
       placeholder="Search for a location"
@@ -15,6 +14,7 @@ export const SearchBarComponent = () => {
         search(searchKeyword);
       }}
       onChangeText={(text) => {
+        console.log(text);
         setSearchKeyword(text);
       }}
     />
