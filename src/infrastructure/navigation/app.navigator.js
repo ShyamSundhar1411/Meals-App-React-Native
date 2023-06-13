@@ -23,6 +23,7 @@ const screenOptions = ({ route }) => {
   const iconName = Tab_Icons[route.name];
   return {
     tabBarIcon: tabBarIcon(iconName),
+    headerShown: false,
   };
 };
 
@@ -31,7 +32,7 @@ export const Navigator = () => {
     <>
       <NavigationContainer>
         <Tab.Navigator screenOptions={screenOptions}>
-          <Tab.Screen name="Restaurants" component={RestaurantNavigator} />
+          <Tab.Screen name="Home" component={RestaurantNavigator} />
           <Tab.Screen name="Settings" component={SettingsScreen} />
           <Tab.Screen name="Map" component={MapScreen} />
         </Tab.Navigator>

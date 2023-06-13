@@ -8,6 +8,8 @@ import {
   SafeAreaView,
   Platform,
   StatusBar,
+  TouchableOpacity,
+  Pressable,
 } from "react-native";
 import { SearchBarComponent } from "../../../components/Search";
 import { RestaurantInfo } from "../components/restaurant-info";
@@ -18,7 +20,7 @@ const SearchBoxContainer = styled.View`
   padding: ${(props) => props.theme.space[2]};
 `;
 
-export const RestaurantScreen = () => {
+export const RestaurantScreen = ({ navigation }) => {
   const { isLoading, error, restaurants } = useContext(RestaurantsContext);
   return (
     <>
@@ -30,7 +32,11 @@ export const RestaurantScreen = () => {
         <FlatList
           data={restaurants}
           renderItem={({ item }) => {
-            return <RestaurantInfo restaurant={item} />;
+            return (
+              <TouchableOpacity onpress={navigation.navigate("Details")}>
+                <RestaurantInfo restaurant={item} />
+              </TouchableOpacity>
+            );
           }}
           keyExtractor={(item) => item.name}
         />
