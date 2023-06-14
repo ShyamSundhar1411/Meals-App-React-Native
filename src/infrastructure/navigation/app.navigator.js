@@ -10,7 +10,7 @@ const MapScreen = () => <Text>Map</Text>;
 const Tab = createBottomTabNavigator();
 
 const Tab_Icons = {
-  Restaurants: "md-restaurant",
+  Home: "md-restaurant",
   Map: "md-map",
   Settings: "md-settings",
 };

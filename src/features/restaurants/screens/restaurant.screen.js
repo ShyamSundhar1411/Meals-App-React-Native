@@ -9,7 +9,6 @@ import {
   Platform,
   StatusBar,
   TouchableOpacity,
-  Pressable,
 } from "react-native";
 import { SearchBarComponent } from "../../../components/Search";
 import { RestaurantInfo } from "../components/restaurant-info";
@@ -33,7 +32,11 @@ export const RestaurantScreen = ({ navigation }) => {
           data={restaurants}
           renderItem={({ item }) => {
             return (
-              <TouchableOpacity onpress={navigation.navigate("Details")}>
+              <TouchableOpacity
+                onpress={navigation.navigate("Details", {
+                  restaurant: item,
+                })}
+              >
                 <RestaurantInfo restaurant={item} />
               </TouchableOpacity>
             );
