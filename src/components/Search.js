@@ -8,8 +8,8 @@ export const SearchBarComponent = () => {
   const [searchKeyword, setSearchKeyword] = useState(keyword);
 
   useEffect(() => {
-    search(searchKeyword);
-  }, [search, searchKeyword]);
+    setSearchKeyword(keyword);
+  }, [keyword]);
   return (
     <Searchbar
       placeholder="Search for a location"
