@@ -11,7 +11,6 @@ const Map = styled(MapView)`
 export const MapScreen = () => {
   const { location } = useContext(LocationContext);
   const { restaurants = [] } = useContext(RestaurantsContext);
-  console.log(restaurants);
   const [latDelta, setLatDelta] = useState(0);
   const { lat, lng, viewport } = location;
   useEffect(() => {
@@ -31,7 +30,9 @@ export const MapScreen = () => {
         }}
       >
         {restaurants.map((restaurant) => {
-          return null;
+          return (
+            <MapView.Marker key={restaurant.name} title={restaurant.name} />
+          );
         })}
       </Map>
     </>
