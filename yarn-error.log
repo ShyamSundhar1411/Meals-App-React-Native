@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\shyam\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-native-gesture-handle
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add react-native-web-view
 
 PATH: 
-  C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\libnvvp;;;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\VMWare Workstation\bin\;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\dotnet\;C:\Program Files\Go\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Graphviz\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.3.0\;C:\Users\shyam\.cargo\bin;C:\Users\shyam\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\shyam\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\shyam\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\shyam\AppData\Local\Microsoft\WindowsApps;C:\Users\shyam\AppData\Local\atom\bin;C:\Program Files\nodejs;C:\Program Files\heroku\bin;C:\Users\shyam\AppData\Local\Microsoft\WindowsApps;C:\Users\shyam\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\PostgreSQL\15\bin\;C:\Program Files\PostgreSQL\15\lib\;C:\Users\shyam\AppData\Local\Programs\Python\Python310;C:\Users\shyam\AppData\Local\Programs\mongosh\;C:\MinGW\bin;C:\SDKs\flutter\bin;C:\Users\shyam\.azure-kubectl;C:\Users\shyam\anaconda3\Scripts;C:\Users\shyam\go\bin;C:\Protoc\bin;C:\Program Files\OpenSSL-Win64\bin;C:\Evans CLI;C:\curl\bin;C:\Users\shyam\AppData\Local\pypoetry\Cache\virtualenvs\recruitmentportal-project-fR8gX9mE-py3.10\Lib\site-packages\graphviz;C:\sqlite;C:\Users\shyam\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\shyam\AppData\Roaming\npm;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\libnvvp;
+  C:\Users\shyam\anaconda3\condabin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\libnvvp;;;D:\VMWare Workstation\bin\;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\dotnet\;C:\Program Files\Go\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Graphviz\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.3.0\;C:\Program Files (x86)\Yarn\bin\;C:\Users\shyam\AppData\Local\Android\Sdk\platform-tools;C:\Users\shyam\AppData\Local\Android\Sdk\tools;C:\Users\shyam\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\shyam\AppData\Local\Programs\Python\Python311\;C:\Users\shyam\.cargo\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\shyam\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\shyam\AppData\Local\Microsoft\WindowsApps;C:\Program Files\nodejs;C:\Program Files\heroku\bin;C:\Users\shyam\AppData\Local\Microsoft\WindowsApps;C:\Users\shyam\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\PostgreSQL\15\bin\;C:\Program Files\PostgreSQL\15\lib\;C:\Users\shyam\AppData\Local\Programs\Python\Python310;C:\Users\shyam\AppData\Local\Programs\mongosh\;C:\MinGW\bin;C:\SDKs\flutter\bin;C:\Users\shyam\.azure-kubectl;C:\Users\shyam\anaconda3\Scripts;C:\Users\shyam\go\bin;C:\Protoc\bin;C:\Program Files\OpenSSL-Win64\bin;C:\Evans CLI;C:\curl\bin;C:\Users\shyam\AppData\Local\pypoetry\Cache\virtua;C:\Users\shyam\AppData\Local\Android\;C:\Users\shyam\AppData\Local\Yarn\bin;
 
 Yarn version: 
   1.22.19
@@ -14,13 +14,13 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/react-native-gesture-handle: Not found
-      at params.callback [as _callback] (C:\Users\shyam\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66145:18)
-      at self.callback (C:\Users\shyam\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140890:22)
+  Error: https://registry.yarnpkg.com/react-native-web-view: Not found
+      at params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66145:18)
+      at self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140890:22)
       at Request.emit (node:events:513:28)
-      at Request.<anonymous> (C:\Users\shyam\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141862:10)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141862:10)
       at Request.emit (node:events:513:28)
-      at IncomingMessage.<anonymous> (C:\Users\shyam\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141784:12)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141784:12)
       at Object.onceWrapper (node:events:627:28)
       at IncomingMessage.emit (node:events:525:35)
       at endReadableNT (node:internal/streams/readable:1359:12)
@@ -52,6 +52,8 @@ npm manifest:
       "postcss": "^8.4.23",
       "react": "18.2.0",
       "react-native": "0.71.8",
+      "react-native-gesture-handler": "~2.9.0",
+      "react-native-maps": "1.3.2",
       "react-native-paper": "^5.7.2",
       "react-native-safe-area-context": "4.5.0",
       "react-native-screens": "~3.20.0",
@@ -1211,6 +1213,13 @@ Lockfile:
       deepmerge "^3.2.0"
       hoist-non-react-statics "^3.3.0"
   
+  "@egjs/hammerjs@^2.0.17":
+    version "2.0.17"
+    resolved "https://registry.yarnpkg.com/@egjs/hammerjs/-/hammerjs-2.0.17.tgz#5dc02af75a6a06e4c2db0202cae38c9263895124"
+    integrity sha512-XQsZgjm2EcVUiZQf11UBJQfmZeEmOW8DpI1gsFeln6w0ae0ii4dMQEQ0kjl6DspdWX1aGY1/loyXnP0JS06e/A==
+    dependencies:
+      "@types/hammerjs" "^2.0.36"
+  
   "@emotion/unitless@^0.8.0":
     version "0.8.1"
     resolved "https://registry.npmjs.org/@emotion/unitless/-/unitless-0.8.1.tgz"
@@ -2069,6 +2078,16 @@ Lockfile:
     integrity sha512-SwUDyjWnah1AaNl7kxsa7cfLhlTYoiyhDAIgyh+El30YvXs/o7OLXpYH88Zdhyx9JExKrmHDJ+10bwIcY80Jmw==
     dependencies:
       "@sinonjs/commons" "^2.0.0"
+  
+  "@types/geojson@^7946.0.8":
+    version "7946.0.10"
+    resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-7946.0.10.tgz#6dfbf5ea17142f7f9a043809f1cd4c448cb68249"
+    integrity sha512-Nmh0K3iWQJzniTuPRcJn5hxXkfB1T1pgB89SBig5PlJQU5yocazeu4jATJlaA0GYFKWMqDdvYemoSnF2pXgLVA==
+  
+  "@types/hammerjs@^2.0.36":
+    version "2.0.41"
+    resolved "https://registry.yarnpkg.com/@types/hammerjs/-/hammerjs-2.0.41.tgz#f6ecf57d1b12d2befcce00e928a6a097c22980aa"
+    integrity sha512-ewXv/ceBaJprikMcxCmWU1FKyMAQ2X7a9Gtmzw8fcg2kIePI1crERDM818W+XYrxqdBBOdlf2rm137bU+BltCA==
   
   "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
     version "2.0.4"
@@ -6572,7 +6591,7 @@ Lockfile:
       kleur "^3.0.3"
       sisteransi "^1.0.5"
   
-  prop-types@*, prop-types@^15.8.1:
+  prop-types@*, prop-types@^15.7.2, prop-types@^15.8.1:
     version "15.8.1"
     resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
     integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -6689,10 +6708,28 @@ Lockfile:
       jscodeshift "^0.13.1"
       nullthrows "^1.1.1"
   
+  react-native-gesture-handler@~2.9.0:
+    version "2.9.0"
+    resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-2.9.0.tgz#2f63812e523c646f25b9ad660fc6f75948e51241"
+    integrity sha512-a0BcH3Qb1tgVqUutc6d3VuWQkI1AM3+fJx8dkxzZs9t06qA27QgURYFoklpabuWpsUTzuKRpxleykp25E8m7tg==
+    dependencies:
+      "@egjs/hammerjs" "^2.0.17"
+      hoist-non-react-statics "^3.3.0"
+      invariant "^2.2.4"
+      lodash "^4.17.21"
+      prop-types "^15.7.2"
+  
   react-native-gradle-plugin@^0.71.18:
     version "0.71.18"
     resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.71.18.tgz#20ef199bc85be32e45bb6cc069ec2e7dcb1a74a6"
     integrity sha512-7F6bD7B8Xsn3JllxcwHhFcsl9aHIig47+3eN4IHFNqfLhZr++3ElDrcqfMzugM+niWbaMi7bJ0kAkAL8eCpdWg==
+  
+  react-native-maps@1.3.2:
+    version "1.3.2"
+    resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-1.3.2.tgz#8e30bfd9d934de02827253e5cde6c08a04f6356c"
+    integrity sha512-NB7HGRZOgxxXCWzrhIVucx/bsrEWANvk3DLci1ov4P9MQnEVQYQCCkTxsnaEvO191GeBOCRDyYn6jckqbfMtmg==
+    dependencies:
+      "@types/geojson" "^7946.0.8"
   
   react-native-paper@^5.7.2:
     version "5.7.2"
